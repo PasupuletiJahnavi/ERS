@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      table, th, td {  
+  border: 1px solid black;
+  text-align: center;
+                  }
+          table {
+               border-collapse: collapse;
+             width: 100%;}
+      th, td{
+        padding: 15px;
+            }
+            body{
+              background-image:url('https://img.freepik.com/free-photo/blue-toned-collection-paper-sheets-with-copy-space_23-2148320445.jpg?w=1380&t=st=1682581870~exp=1682582470~hmac=0f5576ebbb53c68d841b88056719d6b0cd11bd55250b03a9ccfcd1303b996404');
+              background-size: cover;
+              background-repeat: none;
+            }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+          <th>uid</th>
+          
+          <th>filename</th>
+          <th>status</th>
+          
+          
+        </tr>
+        {% for i in usernotification %}
+        <tr>
+          <td>{{i[0]}}</td>
+         
+          
+          
+
+        
+
+          
+          <td><a href="{{url_for('view31',uid=i[1])}}">{{i[1]}}</a></td>
+          
+          <td>{{i[2]}}</a></td>
+        </tr>
+    {% endfor %}
+    </table>
+</html>

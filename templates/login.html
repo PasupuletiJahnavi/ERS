@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<!-- {% with messages = get_flashed_messages() %}
+  {% if messages %}
+        {% for message in messages %}
+      <center><b>{{ message }}</b></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %} -->
+<body>
+    <form method="POST">
+    <div class="box">
+        <div class="form">
+            <h2>ADMIN LOGIN</h2>
+            <div class="inputBox">
+                <input type="text" name="username" required>
+                <span>username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="password" required>
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="{{url_for('forget')}}" target="_blank">Forgot password</a>
+                <a href="{{url_for('register')}}" target="_blank">Register</a>
+            </div>
+            <input type="submit" value="Login">
+        </div>
+    </div>
+    </form>
+</body>
+</html>

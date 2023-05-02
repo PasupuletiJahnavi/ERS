@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='uregister.css') }}">
+</head>
+
+<!-- {% with messages = get_flashed_messages() %}
+  {% if messages %}
+        {% for message in messages %}
+      <center><b>{{ message }}</b></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %} -->
+<body>
+    <form method="POST">
+    <div class="box">
+        <div class="form">
+            <h2>APPLICANT REGISTER</h2>
+            <div class="inputBox">
+                <input type="text"name="username" required>
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text"name="email" required>
+                <span>Email</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+              <input type="text"name="password" required>
+              <span>Password</span>
+              <i></i>
+            </div>
+            <div class="inputBox">
+              <input type="text" name="mobile" required>
+              <span>Mobile</span>
+
+              <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" name="experience" required>
+                <span>Experience</span>
+                
+                <i></i>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="companyname" required>
+                <span>companyname</span>
+                
+                <i></i>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="qualification" required>
+                <span>Qualification</span>
+                
+                <i></i>
+              </div>
+              
+
+
+            <input type="submit" value="Register"><br>
+            <a class="log" href="{{url_for('ulogin')}}" target="_blank">Already Have an Account?</a>
+        </div>
+    </div>
+</form>
+</body>
+</html>

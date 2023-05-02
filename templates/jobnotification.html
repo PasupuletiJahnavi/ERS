@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add job notifications</title>
+    <style>
+            header{
+    text-align: center;
+    color:rgb(205, 114, 160);
+    font-family: poppins;
+    background-color: purple;
+    height: 55px;
+    margin-top: 20px;
+    padding: 40px;
+    font-weight: bolder;
+    font-size:35px;
+    background-color: transparent;
+}
+form{
+    margin-top: 40px;
+    margin-left: 620px;
+}
+body{
+    background-image:url('https://images.unsplash.com/photo-1518655048521-f130df041f66?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d29yayUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80');
+    background-size: cover;
+    background-repeat: none;
+    
+}
+
+input{
+    font-size: 15px;
+    padding: 10px 5px;
+    width:260px;
+    border: 1px solid purple;
+    border-radius: 8px;
+}
+button{
+font-size: 15px;
+    padding: 10px 15px;
+    width: 78px;
+    margin: 20px 0;
+    border: 1px solid;
+    border-radius: 9px;
+    margin-left: 5px;
+    background-color: rgb(205, 114, 160);
+color: aliceblue;
+font-family: poppins;}
+
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <header>ONLINE RECRUITMENT PORTAL</header>
+    <div class="container">
+        <form method="POST" enctype="multipart/form-data">
+            <p> JOB ID</p>
+            <input type="text" placeholder="enter job id"  name="jid" required>
+            
+            <p>JOB TITLE</p>
+            <input type="text" placeholder="enter job title" name="jobtitle" required><br>
+            
+            <p>JOB DESCRIPTION</p>
+            <input type="text" placeholder="enter job description" name="jobdesc" required><br>
+          <p>DUE DATE</p>
+            <input type="date" placeholder="enter  date" name="duedate" required><br><br>
+            <p>FILE </p>
+            <input type="file" style="width:200px" id="actual-btn" name="filedata"/><br><br>
+<button type="sumbit" class="two"><b>Submit</b></button>
+         </form>
+        </form>
+
+    </div>
+    
+</body>
+</html>
